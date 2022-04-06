@@ -1,163 +1,163 @@
 <HTML>
 <HEAD>
-<TITLE>ƒEƒCƒ‹ƒXƒ{ƒ^ƒ“iƒWƒ‡[ƒNj</TITLE>
+<TITLE>ã‚¦ã‚¤ãƒ«ã‚¹ãƒœã‚¿ãƒ³ï¼ˆã‚¸ãƒ§ãƒ¼ã‚¯ï¼‰</TITLE>
 
 
 <SCRIPT language="JavaScript"><!--      
 
-//  ƒEƒCƒ‹ƒXƒ{ƒ^ƒ“iƒWƒ‡[ƒNj          
+//  ã‚¦ã‚¤ãƒ«ã‚¹ãƒœã‚¿ãƒ³ï¼ˆã‚¸ãƒ§ãƒ¼ã‚¯ï¼‰          
 //                                      
-//                 ƒo[ƒWƒ‡ƒ“  ‚PD‚Q   
+//                 ãƒãƒ¼ã‚¸ãƒ§ãƒ³  ï¼‘ï¼Žï¼’   
 //                                      
-//  ‚±‚ÌƒvƒƒOƒ‰ƒ€‚ÍAƒtƒŠ[ƒ\ƒtƒg‚Å‚·B
-//        “]Ú‚¨‚æ‚ÑA‰ü‘¢‚ÍAŽ©—R‚Å‚·B
+//  ã“ã®ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã¯ã€ãƒ•ãƒªãƒ¼ã‚½ãƒ•ãƒˆã§ã™ã€‚
+//        è»¢è¼‰ãŠã‚ˆã³ã€æ”¹é€ ã¯ã€è‡ªç”±ã§ã™ã€‚
 //                                      
-//                        ìŽÒ  •Ÿ“c’¼l
+//                        ä½œè€…  noty2008
 
 
-//  **  “]Ú‚·‚é•û–@  **                                       
-//  <HEAD></HEAD> A‚¨‚æ‚ÑA <BODY></BODY> ‚ÅˆÍ‚Ü‚ê‚¢‚é•”•ª‚ðA
-// Žg‚¢‚½‚¢ƒy[ƒW‚ÖA“¯‚¶‚æ‚¤‚ÉAƒRƒs[‚µ‚Ä‰º‚³‚¢B            
+//  **  è»¢è¼‰ã™ã‚‹æ–¹æ³•  **                                       
+//  <HEAD></HEAD> ã€ãŠã‚ˆã³ã€ <BODY></BODY> ã§å›²ã¾ã‚Œã„ã‚‹éƒ¨åˆ†ã‚’ã€
+// ä½¿ã„ãŸã„ãƒšãƒ¼ã‚¸ã¸ã€åŒã˜ã‚ˆã†ã«ã€ã‚³ãƒ”ãƒ¼ã—ã¦ä¸‹ã•ã„ã€‚            
 
 
-// ƒOƒ[ƒoƒ‹•Ï”
-var ub_timerId = null;		//  ƒ^ƒCƒ}[‚h‚c
-var ub_c = 0;				//  ƒJƒEƒ“ƒ^[
-var ub_mn = 0;				//  ƒƒbƒZ[ƒWƒiƒ“ƒo[
+// ã‚°ãƒ­ãƒ¼ãƒãƒ«å¤‰æ•°
+var ub_timerId = null;		//  ã‚¿ã‚¤ãƒžãƒ¼ï¼©ï¼¤
+var ub_c = 0;				//  ã‚«ã‚¦ãƒ³ã‚¿ãƒ¼
+var ub_mn = 0;				//  ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒŠãƒ³ãƒãƒ¼
 
 
-//  ŠÖ”
+//  é–¢æ•°
 
-//**  ƒEƒCƒ‹ƒXƒ{ƒ^ƒ“					**/
-//  ƒ{ƒ^ƒ“‚ðƒNƒŠƒbƒN‚·‚é
+//**  ã‚¦ã‚¤ãƒ«ã‚¹ãƒœã‚¿ãƒ³					**/
+//  ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã™ã‚‹
 function ubClick() {
 
 
-	//  ó‘Ô•Ê‚Ìˆ—
+	//  çŠ¶æ…‹åˆ¥ã®å‡¦ç†
 	if(ub_c == 0){
-		//  ƒƒCƒ“ƒvƒƒOƒ‰ƒ€‚ª’âŽ~‚µ‚Ä‚¢‚éê‡
+		//  ãƒ¡ã‚¤ãƒ³ãƒ—ãƒ­ã‚°ãƒ©ãƒ ãŒåœæ­¢ã—ã¦ã„ã‚‹å ´åˆ
 
-		//  ƒ{ƒ^ƒ“‚Ì•¶Žš‚ªAƒLƒƒƒ“ƒZƒ‹‚É•ÏX‚³‚ê‚éB
-		document.FormUb.ButtonUb.value = "ƒLƒƒƒ“ƒZƒ‹";
+		//  ãƒœã‚¿ãƒ³ã®æ–‡å­—ãŒã€ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã«å¤‰æ›´ã•ã‚Œã‚‹ã€‚
+		document.FormUb.ButtonUb.value = "ã‚­ãƒ£ãƒ³ã‚»ãƒ«";
 
-		//  ƒeƒLƒXƒgƒ{ƒbƒNƒX‚ÉAƒƒbƒZ[ƒW‚ð•\Ž¦‚·‚éB
-		document.FormUb.TextUb.value = "ƒEƒCƒ‹ƒX‚ðAƒCƒ“ƒXƒg[ƒ‹‚µ‚Ä‚¢‚Ü‚·B";
+		//  ãƒ†ã‚­ã‚¹ãƒˆãƒœãƒƒã‚¯ã‚¹ã«ã€ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¡¨ç¤ºã™ã‚‹ã€‚
+		document.FormUb.TextUb.value = "ã‚¦ã‚¤ãƒ«ã‚¹ã‚’ã€ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¦ã„ã¾ã™ã€‚";
 
-		//  •Ï”‚ðÝ’è‚·‚é
-		ub_c = 0;						//  ƒJƒEƒ“ƒ^[
-		ub_mn = 1;						//  ƒƒbƒZ[ƒWƒiƒ“ƒo[
+		//  å¤‰æ•°ã‚’è¨­å®šã™ã‚‹
+		ub_c = 0;						//  ã‚«ã‚¦ãƒ³ã‚¿ãƒ¼
+		ub_mn = 1;						//  ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒŠãƒ³ãƒãƒ¼
 
-		//  ƒƒCƒ“ƒvƒƒOƒ‰ƒ€‚ð‹N“®‚·‚é
+		//  ãƒ¡ã‚¤ãƒ³ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã‚’èµ·å‹•ã™ã‚‹
 		ub_timerId = window.setTimeout("ubMain()", 90);
 	}
 	else if(ub_c >= 1  &&  ub_c <= 100){
-		//  ƒƒCƒ“ƒvƒƒOƒ‰ƒ€‚ª“®‚¢‚Ä‚¢‚éê‡
+		//  ãƒ¡ã‚¤ãƒ³ãƒ—ãƒ­ã‚°ãƒ©ãƒ ãŒå‹•ã„ã¦ã„ã‚‹å ´åˆ
 
-		//  ƒ{ƒ^ƒ“‚ðƒNƒŠƒbƒN‚µ‚½ŽžA‚¢‚ë‚¢‚ë‚ÈƒƒbƒZ[ƒW‚ð•\Ž¦‚·‚éB
+		//  ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ãŸæ™‚ã€ã„ã‚ã„ã‚ãªãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¡¨ç¤ºã™ã‚‹ã€‚
 		if(ub_mn == 1) {
-			document.FormUb.TextUb.value = "ƒLƒƒƒ“ƒZƒ‹o—ˆ‚Ü‚¹‚ñB";
-			ub_mn = 2;					//  ŽŸ‰ñ‚ÌƒƒbƒZ[ƒW
+			document.FormUb.TextUb.value = "ã‚­ãƒ£ãƒ³ã‚»ãƒ«å‡ºæ¥ã¾ã›ã‚“ã€‚";
+			ub_mn = 2;					//  æ¬¡å›žã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		}
 		else if(ub_mn == 2) {
-			document.FormUb.TextUb.value = "ƒLƒƒƒ“ƒZƒ‹‚ÍAo—ˆ‚È‚¢‚ñ‚¾‚æ‚¤B‚Ó‚Á‚Ó‚Á‚ÓB";
-			ub_mn = 3;					//  ŽŸ‰ñ‚ÌƒƒbƒZ[ƒW
+			document.FormUb.TextUb.value = "ã‚­ãƒ£ãƒ³ã‚»ãƒ«ã¯ã€å‡ºæ¥ãªã„ã‚“ã ã‚ˆã†ã€‚ãµã£ãµã£ãµã€‚";
+			ub_mn = 3;					//  æ¬¡å›žã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		}
 		else if(ub_mn == 3) {
-			document.FormUb.TextUb.value = "–³‘Ê  –³‘Ê  –³‘Ê  –³‘Ê  –³‘Ê  –³‘Ê  –³‘Ê  –³‘Ê";
-			ub_mn = 4;					//  ŽŸ‰ñ‚ÌƒƒbƒZ[ƒW
+			document.FormUb.TextUb.value = "ç„¡é§„  ç„¡é§„  ç„¡é§„  ç„¡é§„  ç„¡é§„  ç„¡é§„  ç„¡é§„  ç„¡é§„";
+			ub_mn = 4;					//  æ¬¡å›žã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		}
 		else {
-			//  ƒCƒ“ƒXƒg[ƒ‹ƒ[ƒ^[‚ðA•`‰æ‚·‚éB
+			//  ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãƒ¡ãƒ¼ã‚¿ãƒ¼ã‚’ã€æç”»ã™ã‚‹ã€‚
 			ubDrawMeter();
 
-			ub_mn = 1;					//  ŽŸ‰ñ‚ÌƒƒbƒZ[ƒW
+			ub_mn = 1;					//  æ¬¡å›žã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸
 		}
 	}
 }
 
 
-//  ƒƒCƒ“ƒvƒƒOƒ‰ƒ€
-//  ƒ^ƒCƒ}[‹N“®’†‚ÍA‰½“x‚àŒÄ‚Ño‚³‚ê‚Ü‚·B
+//  ãƒ¡ã‚¤ãƒ³ãƒ—ãƒ­ã‚°ãƒ©ãƒ 
+//  ã‚¿ã‚¤ãƒžãƒ¼èµ·å‹•ä¸­ã¯ã€ä½•åº¦ã‚‚å‘¼ã³å‡ºã•ã‚Œã¾ã™ã€‚
 function ubMain(){
 
 
 	if(ub_c <= 100){
-		// ƒCƒ“ƒXƒg[ƒ‹’†
+		// ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ä¸­
 
-		//  ƒXƒe[ƒ^ƒXƒo[‚Å‚àA‚¿‚á‚ñ‚Æƒ_ƒEƒ“ƒ[ƒh’†‚ðéŒ¾B
-		window.status = " ƒ_ƒEƒ“ƒ[ƒh‚µ‚Ä‚¢‚Ü‚·B    " + ub_c + "“";
+		//  ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒãƒ¼ã§ã‚‚ã€ã¡ã‚ƒã‚“ã¨ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ä¸­ã‚’å®£è¨€ã€‚
+		window.status = " ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ã¦ã„ã¾ã™ã€‚    " + ub_c + "ï¼…";
 		ub_timerId = window.setTimeout("ubMain()", 600);
 
-		//  ƒƒbƒZ[ƒWƒiƒ“ƒo[‚ª 1 ‚ÉÝ’è‚³‚ê‚Ä‚¢‚éB
+		//  ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãƒŠãƒ³ãƒãƒ¼ãŒ 1 ã«è¨­å®šã•ã‚Œã¦ã„ã‚‹ã€‚
 		if(ub_mn == 1){
-			//  ƒCƒ“ƒXƒg[ƒ‹ƒ[ƒ^[‚ðA•`‰æ‚·‚éB
+			//  ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãƒ¡ãƒ¼ã‚¿ãƒ¼ã‚’ã€æç”»ã™ã‚‹ã€‚
 			ubDrawMeter();
 		}
 
-		//  ƒJƒEƒ“ƒgƒ_ƒEƒ“
+		//  ã‚«ã‚¦ãƒ³ãƒˆãƒ€ã‚¦ãƒ³
 		ub_c += 5;
 	}
 	else{
-		// ƒCƒ“ƒXƒg[ƒ‹Š®—¹
+		// ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«å®Œäº†
 
-		//  ƒ^ƒCƒ}[‚ðI—¹‚µ‚Ü‚·B
+		//  ã‚¿ã‚¤ãƒžãƒ¼ã‚’çµ‚äº†ã—ã¾ã™ã€‚
       	window.clearTimeout(ub_timerId);
 
-		document.FormUb.TextUb.value = "ƒEƒCƒ‹ƒX‚ÌƒCƒ“ƒXƒg[ƒ‹‚ªAI—¹‚µ‚Ü‚µ‚½B";
-		document.FormUb.ButtonUb.value = " Š®—¹ ";
-		window.status = " ƒ_ƒEƒ“ƒ[ƒh‚µ‚½ƒtƒ@ƒCƒ‹‚ðAŽÀs‚µ‚Ü‚µ‚½B";
+		document.FormUb.TextUb.value = "ã‚¦ã‚¤ãƒ«ã‚¹ã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãŒã€çµ‚äº†ã—ã¾ã—ãŸã€‚";
+		document.FormUb.ButtonUb.value = " å®Œäº† ";
+		window.status = " ãƒ€ã‚¦ãƒ³ãƒ­ãƒ¼ãƒ‰ã—ãŸãƒ•ã‚¡ã‚¤ãƒ«ã‚’ã€å®Ÿè¡Œã—ã¾ã—ãŸã€‚";
 
-		//  ƒEƒCƒ‹ƒX‚ÌƒCƒ“ƒXƒg[ƒ‹‚ªAŠ®—¹‚µ‚½Žž‚Ìˆ—B
+		//  ã‚¦ã‚¤ãƒ«ã‚¹ã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãŒã€å®Œäº†ã—ãŸæ™‚ã®å‡¦ç†ã€‚
 		ubComplete()
 
-		// ‰Šú‰»‚·‚é
-		document.FormUb.TextUb.value = "  ¶‚É‚ ‚éh—E‹C‚Ìƒ{ƒ^ƒ“h‚ðA‰Ÿ‚µ‚Ä‚Ý‚½‚Ü‚¦B‚Ó‚Á‚Ó‚Á‚ÓB";
-		document.FormUb.ButtonUb.value = " ƒEƒCƒ‹ƒX ";
+		// åˆæœŸåŒ–ã™ã‚‹
+		document.FormUb.TextUb.value = "  å·¦ã«ã‚ã‚‹â€å‹‡æ°—ã®ãƒœã‚¿ãƒ³â€ã‚’ã€æŠ¼ã—ã¦ã¿ãŸã¾ãˆã€‚ãµã£ãµã£ãµã€‚";
+		document.FormUb.ButtonUb.value = " ã‚¦ã‚¤ãƒ«ã‚¹ ";
 		ub_c = 0;
 
-		//  ƒXƒe[ƒ^ƒXƒo[‚Ì•¶Žš—ñ‚ðAƒNƒŠƒA‚·‚éB
+		//  ã‚¹ãƒ†ãƒ¼ã‚¿ã‚¹ãƒãƒ¼ã®æ–‡å­—åˆ—ã‚’ã€ã‚¯ãƒªã‚¢ã™ã‚‹ã€‚
 		window.status = "";
 	}
 }
 
 
-//  ƒCƒ“ƒXƒg[ƒ‹ƒ[ƒ^[‚ðA•`‰æ‚·‚éB
+//  ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãƒ¡ãƒ¼ã‚¿ãƒ¼ã‚’ã€æç”»ã™ã‚‹ã€‚
 function ubDrawMeter() {
-	//  ƒ[ƒJƒ‹•Ï”‚ÌéŒ¾
-	var i;			//  ƒ‹[ƒvƒJƒEƒ“ƒ^[
-	var msg;		//  ƒƒbƒZ[ƒW—p‚Ì•¶Žš—ñ
+	//  ãƒ­ãƒ¼ã‚«ãƒ«å¤‰æ•°ã®å®£è¨€
+	var i;			//  ãƒ«ãƒ¼ãƒ—ã‚«ã‚¦ãƒ³ã‚¿ãƒ¼
+	var msg;		//  ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ç”¨ã®æ–‡å­—åˆ—
 
 
-	//  •¶Žš—ñ‚ðì¬‚·‚é
-	msg = "ƒEƒCƒ‹ƒX‚ðAƒCƒ“ƒXƒg[ƒ‹‚µ‚Ä‚¢‚Ü‚·B    "
+	//  æ–‡å­—åˆ—ã‚’ä½œæˆã™ã‚‹
+	msg = "ã‚¦ã‚¤ãƒ«ã‚¹ã‚’ã€ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ã—ã¦ã„ã¾ã™ã€‚    "
 	if(ub_c > 0) {
-		//  –_ƒOƒ‰ƒt‚Ì•¶Žš—ñ
+		//  æ£’ã‚°ãƒ©ãƒ•ã®æ–‡å­—åˆ—
 		for(i = 0;i < ub_c;i += 10){
-			msg =msg + "¡";
+			msg =msg + "â– ";
 		}
 	}
 
-	//  ƒeƒLƒXƒgƒ{ƒbƒNƒX‚É–_ƒOƒ‰ƒt‚ðA•`‰æ‚·‚éB
+	//  ãƒ†ã‚­ã‚¹ãƒˆãƒœãƒƒã‚¯ã‚¹ã«æ£’ã‚°ãƒ©ãƒ•ã‚’ã€æç”»ã™ã‚‹ã€‚
 	document.FormUb.TextUb.value = msg;
 }
 
 
-//  ƒEƒCƒ‹ƒX‚ÌƒCƒ“ƒXƒg[ƒ‹‚ªAŠ®—¹‚µ‚½Žž‚Ìˆ—B
-//  ‚±‚ÌŠÖ”‚ð‰ü‘¢‚·‚é‚ÆAƒvƒƒOƒ‰ƒ€‚Ì–Ú“I‚ð•ÏX‚Å‚«‚Ü‚·B
+//  ã‚¦ã‚¤ãƒ«ã‚¹ã®ã‚¤ãƒ³ã‚¹ãƒˆãƒ¼ãƒ«ãŒã€å®Œäº†ã—ãŸæ™‚ã®å‡¦ç†ã€‚
+//  ã“ã®é–¢æ•°ã‚’æ”¹é€ ã™ã‚‹ã¨ã€ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã®ç›®çš„ã‚’å¤‰æ›´ã§ãã¾ã™ã€‚
 function ubComplete() {
 
 
-		//  ”wŒiF‚ð•‚­‚·‚é
+		//  èƒŒæ™¯è‰²ã‚’é»’ãã™ã‚‹
 		document.bgColor="black";
 
-		//  Œx‚ÌƒEƒCƒ“ƒhƒE‚ðo‚·
-		alert("ƒVƒXƒeƒ€ƒtƒ@ƒCƒ‹‚ªA”j‰ó‚³‚ê‚Ä‚¢‚Ü‚·B");
+		//  è­¦å‘Šã®ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã‚’å‡ºã™
+		alert("ã‚·ã‚¹ãƒ†ãƒ ãƒ•ã‚¡ã‚¤ãƒ«ãŒã€ç ´å£Šã•ã‚Œã¦ã„ã¾ã™ã€‚");
 
-		//  Œx‚ÌƒEƒCƒ“ƒhƒE‚ðo‚·
-		alert("ç’k‚Å‚·B");
+		//  è­¦å‘Šã®ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¦ã‚’å‡ºã™
+		alert("å†—è«‡ã§ã™ã€‚");
 
-		//  ”wŒiF‚ðA silver ‚É–ß‚µ‚Ü‚·B
-		//  Ý’u‚·‚é‚É‚æ‚Á‚ÄAF–¼‚ÍA•ÏX‚µ‚Ä‰º‚³‚¢B
+		//  èƒŒæ™¯è‰²ã‚’ã€ silver ã«æˆ»ã—ã¾ã™ã€‚
+		//  è¨­ç½®ã™ã‚‹ã«ã‚ˆã£ã¦ã€è‰²åã¯ã€å¤‰æ›´ã—ã¦ä¸‹ã•ã„ã€‚
 		document.bgColor="silver";
 }
 
@@ -169,16 +169,16 @@ function ubComplete() {
 </HEAD>
 
 
-<!--  ”wŒiF‚ÍA silver ‚ÉÝ’è‚µ‚Ü‚·B  -->
+<!--  èƒŒæ™¯è‰²ã¯ã€ silver ã«è¨­å®šã—ã¾ã™ã€‚  -->
 <BODY  bgcolor="silver" >
 
 
-<!--  ƒEƒCƒ‹ƒXƒ{ƒ^ƒ“—p‚ÌƒtƒH[ƒ€  -->
+<!--  ã‚¦ã‚¤ãƒ«ã‚¹ãƒœã‚¿ãƒ³ç”¨ã®ãƒ•ã‚©ãƒ¼ãƒ   -->
 <FORM name="FormUb">
-<!--  ƒ{ƒ^ƒ“ƒIƒuƒWƒFƒNƒg  -->
-<INPUT name="ButtonUb" type="button" value=" ƒEƒCƒ‹ƒX " onClick="ubClick()">
-<!--  ƒeƒLƒXƒgƒ{ƒbƒNƒXƒIƒuƒWƒFƒNƒg  -->
- <INPUT name="TextUb" type="text" size="65" value="  ¶‚É‚ ‚éh—E‹C‚Ìƒ{ƒ^ƒ“h‚ðA‰Ÿ‚µ‚Ä‚Ý‚½‚Ü‚¦B‚Ó‚Á‚Ó‚Á‚ÓB">
+<!--  ãƒœã‚¿ãƒ³ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ  -->
+<INPUT name="ButtonUb" type="button" value=" ã‚¦ã‚¤ãƒ«ã‚¹ " onClick="ubClick()">
+<!--  ãƒ†ã‚­ã‚¹ãƒˆãƒœãƒƒã‚¯ã‚¹ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆ  -->
+ <INPUT name="TextUb" type="text" size="65" value="  å·¦ã«ã‚ã‚‹â€å‹‡æ°—ã®ãƒœã‚¿ãƒ³â€ã‚’ã€æŠ¼ã—ã¦ã¿ãŸã¾ãˆã€‚ãµã£ãµã£ãµã€‚">
 </FORM>
 
 
