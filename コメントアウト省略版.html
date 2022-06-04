@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<head>
+<title>ウイルスボタン</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<script>      
+var ub_timerId = null; 
+var ub_c = 0; 
+var ub_mn = 0; 
+function ubClick() {
+  if (ub_c == 0) {
+    document.FormUb.ButtonUb.value = "キャンセル";
+    document.FormUb.TextUb.value = "ウイルスを、インストールしています。";
+    ub_c = 0; 
+    ub_mn = 1; 
+    ub_timerId = window.setTimeout("ubMain()", 90);
+  } else if (ub_c >= 1 && ub_c <= 100) {
+    if (ub_mn == 1) {
+      document.FormUb.TextUb.value = "キャンセル出来ません。";
+      ub_mn = 2; 
+    } else if (ub_mn == 2) {
+      document.FormUb.TextUb.value = "キャンセルは、出来ないんだよう。ふっふっふ。";
+      ub_mn = 3; 
+    } else if (ub_mn == 3) {
+      document.FormUb.TextUb.value = "無駄  無駄  無駄  無駄  無駄  無駄  無駄  無駄";
+      ub_mn = 4; 
+    } else {
+      ubDrawMeter();
+      ub_mn = 1; 
+    }
+  }
+}
+function ubMain() {
+  if (ub_c <= 100) {
+    window.status = " ダウンロードしています。    " + ub_c + "％";
+    ub_timerId = window.setTimeout("ubMain()", 600);
+    if (ub_mn == 1) {
+      ubDrawMeter();
+    }
+    ub_c += 5;
+  } else {
+    window.clearTimeout(ub_timerId);
+    document.FormUb.TextUb.value = "ウイルスのインストールが、終了しました。";
+    document.FormUb.ButtonUb.value = " 完了 ";
+    window.status = " ダウンロードしたファイルを、実行しました。";
+    ubComplete()
+    document.FormUb.TextUb.value = "  左にある”勇気のボタン”を、押してみたまえ。ふっふっふ。";
+    document.FormUb.ButtonUb.value = " ウイルス ";
+    ub_c = 0;
+    window.status = "";
+  }
+}
+function ubDrawMeter() {
+  var i; 
+  var msg; 
+  msg = "ウイルスを、インストールしています。    "
+  if (ub_c > 0) {
+    for (i = 0; i < ub_c; i += 10) {
+      msg = msg + "■";
+    }
+  }
+  document.FormUb.TextUb.value = msg;
+}
+function ubComplete() {
+  document.bgColor = "black";
+  alert("システムファイルが、破壊されています。");
+  alert("冗談です。");
+  document.bgColor = "silver";
+}
+</script>
+</head>
+<body  bgcolor="silver" >
+<form name="FormUb">
+<input name="ButtonUb" type="button" value=" ウイルス " onClick="ubClick()">
+ <input name="TextUb" type="text" size="65" value="  左にある”勇気のボタン”を、押してみたまえ。ふっふっふ。">
+</form>
+</body>
+</html>
